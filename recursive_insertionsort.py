@@ -1,6 +1,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+#  Best case scenario: Ω (n^2)
+#  Worst case scenario: O(n^2)
+
+
 def insertionsort(array: list, x, keyindex: int = 1) -> list:
     if keyindex >= len(array):
         return array 

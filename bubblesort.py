@@ -1,6 +1,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+#  Best case scenario: Ω (n)
+#  Worst case scenario: O(n^2)
+
+
 amount = 20
 
 array = np.random.randint(0, 100, amount)

@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 # MergeSort in Python
-
+#  Best case scenario: Ω (n log n)
+#  Worst case scenario: O(n log n)
 
 def mergeSort(array):
     if len(array) > 1:
