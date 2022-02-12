@@ -19,14 +19,16 @@ def insertionsort(array: list, x, keyindex: int = 1) -> list:
     while index >= 0 and key < array[index]:
         array[index + 1] = array[index]
         index = index - 1
-
+        
+    # In order to negate the above index -= 1 at the end of the , we have to + 1 
     array[index + 1] = key
     return insertionsort(array, x, keyindex + 1)
 
 #  array = [789, 4, 2, 5, 7, 89, 2, 554, 6664, 1, 22225, 14, 75, 32, 12]
 
 amount = 100
-array = np.random.randint(0, 100, amount)
+array = np.random.randint(0, 500, amount)
 x = np.arange(0, amount, 1)
+print(f"Before sorting {array}")
 print(insertionsort(array, x))
 plt.show()
